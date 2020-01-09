@@ -23,6 +23,16 @@ const sqlMap = {
       lunboImg: 'SELECT * FROM home_lunbo WHERE state = ?', // 根据公司获取首页轮播图列表
       lunboImgAll: 'SELECT * FROM home_lunbo',  // 获取首页轮播图列表-总
       contactList: 'select * from contact', // 获取联系我们列表
+    },
+
+    // 文件
+    file: {
+      fileUpload: 'insert  into file (id, path, create_time) values (?, ?, ?)', // 添加图片
+      fileUpdate: 'update  file set path = ? where id = ?', // 更新图片
+      fileDelete: 'delete from file where id = ? ', // 删除图片
+      fileById: 'select * from file where id = ?', // 根据Id查询
+      fileList: 'select * from file order by create_time desc limit (?,?)', // 文件列表
     }
+
 }
 module.exports = sqlMap

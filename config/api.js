@@ -13,4 +13,9 @@ module.exports = {
   companyLunBoImg: path + '/lunbo/imgList',// 获取公司官网首页轮播图片
   contact: path + '/contact/addContact', // 增加联系我们
   contactList: path + '/contact/contactList', // 增加联系我们
+
+  // 文件相关
+  fileUpload: path + '/file/upload', // 上传文件
+  fileDelete: path + '/file/delete/:id', // 删除文件
+  fileUpdate: path + '/file/update' // 更新文件
 }
