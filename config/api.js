@@ -17,5 +17,15 @@ module.exports = {
   // 文件相关
   fileUpload: path + '/file/upload', // 上传文件
   fileDelete: path + '/file/delete/:id', // 删除文件
-  fileUpdate: path + '/file/update' // 更新文件
+  fileUpdate: path + '/file/update', // 更新文件
+
+  // 商品信息
+  goodsList: path + '/goods/list', // 商品列表(根据商家ID)
+  goodsAdd: path + '/goods/add', // 添加商品
+  goodsUpdate: path + '/goods/update', // 更新商品
+  goodsDelete: path + '/goods/delete', // 删除商品(单个-根据ID)
+  goodsDeleteList: path + '/goods/deleteList', // 删除商品(多个-根据ID list)
+  goodsDetail: path + '/goods/detail', // 商品详情(根据商品ID)
+  goodsImgList: path + '/goods/imgList', // 商品图片列表(根据商家ID)-测试接口
+
 }
