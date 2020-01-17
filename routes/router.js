@@ -5,6 +5,7 @@ let user = require('../controls/user');
 let company = require('../controls/company');
 let file = require('../controls/file');
 let goods = require('../controls/goods');
+let report = require('../controls/report');
 
 // 文件处理
 let multer = require('multer');
@@ -38,5 +39,8 @@ router.post(api.goodsAdd, goods.goodsAdd), // 添加商品
 router.put(api.goodsUpdate, goods.goodsUpdate), // 更新商品
 router.delete(api.goodsDelete, goods.goodsDelete), // 删除商品
 router.delete(api.goodsDeleteList, goods.goodsDeleteList), //批量删除图片 
+
+// 日报管理
+router.get(api.reportList, report.reportList), // 获取日报列表
 
 module.exports = router;

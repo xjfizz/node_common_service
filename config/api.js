@@ -28,4 +28,7 @@ module.exports = {
   goodsDetail: path + '/goods/detail', // 商品详情(根据商品ID)
   goodsImgList: path + '/goods/imgList', // 商品图片列表(根据商家ID)-测试接口
 
+  // 日报管理
+  reportList: path + '/report/list', // 日报列表
+
 }

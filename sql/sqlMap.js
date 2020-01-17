@@ -42,6 +42,11 @@ const sqlMap = {
       goodsUpdate: 'update goods_detail set goods_name = ? , goods_message = ?, update_time = ? where goods_detail_id = ?', // 更新商品
       goodsDelete: 'delete from goods_detail where goods_detail_id = ?', // 删除商品
       goodsDeleteList: `delete from goods_detail where goods_detail_id in ( ? )`, // 批量删除商品
+    },
+
+    // 周报
+    report:{
+      reportList: 'select report.*, user.nickname from report,user where report.userId = user.id and report.userId = ? and report.type = ?' // 根据用户Id查询日报
     }
 
 }

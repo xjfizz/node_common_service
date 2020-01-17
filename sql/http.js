@@ -36,7 +36,7 @@ const $http = {
   // user验证
   userVerify(req, res, cb) {
     // cb()
-    let isToken = true;
+    let isToken = false;
     if (!isToken) {
       return cb();
     }
